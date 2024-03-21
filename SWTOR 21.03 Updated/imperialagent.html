@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="classes.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent_class">
+        <div class="wrapper">
+            <h1>Sniper</h1>
+            <div>
+                <section class="layout_class1">
+                    <div class="grow1">
+                        <h1>Marksmanship</h1>
+                        Class: Damage (Burst)<br>
+                        Mirror: Gunslinger Sharpshooter<br>
+                        Implants:
+                        <div class="Implants">
+                        <text class="green">Locked and Loaded</text><br>
+                        <text class="red">Improved Targeting</text><br>
+                        </div>
+                        <a href="#" onclick="openPopupCritAlac()"> Crit and Alac Gear</a> <br>
+                        <div id="openPopupCritAlac" class="popup">
+                            <form id="popupForm">
+                                
+                                <table>
+                                    <tr>
+                                        <td>Accuarcy Piece</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Accuarcy Augment</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alac Piece</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alac Augment</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crit Piece</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crit Augment</td>
+                                        <td> 12</td>
+                                    </tr>
+                                </table>
+                        </div>
+                    </div>
+
+                    <div class="grow1">
+                        <h1>Engineering</h1>
+                        Class: Damage (over time)<br>
+                        Mirror: Gunslinger Saboteur<br>
+                        Implants:
+                        <div class="implants">
+                            <text class="green">Locked and Loaded</text><br>
+                            <text class="red">Improved Targeting</text><br>
+                        </div>
+                        <a href="#" onclick="openPopupCritAlac()"> Crit and Alac Gear</a> <br>
+                    </div>
+
+                    <div class="grow1">
+                        <h1>Virulence</h1>
+                        Class: Damage (Over time)<br>
+                        Mirror: Gunslinger Dirty fighting<br>
+                        Implants: 
+                        <div class="implants">
+                            <text class="green">Locked and Loaded</text><br>
+                            <text class="red">Improved Targeting</text><br>
+                        </div>
+                        <a href="#" onclick="openPopupCritAlac()"> Crit and Alac Gear</a> <br>
+                    </div>
+                </section>
+            </div>
+
+        </div>  
+    </div>
+<!-------------------------------------------------------------->
+<div class="parent_class">
+    <div class="wrapper">
+        <h1>Operative</h1>
+        <div>
+            <section class="layout_class1">
+                <div class="grow1">
+                    <h1>Medicine</h1>
+                    Class: Healing<br>
+                    Mirror: Scoundrel Sawbones<br>
+                    Implants:
+                    <div class="Implants">
+                    <text class="green">Locked and Loaded</text><br>
+                    <text class="green">Tactican</text><br>
+                    </div>
+                    <a href="#" onclick="openPopupAlacAlac()"> Alac and Alac Gear</a> <br>
+                    <div id="openPopupAlacAlac" class="popup">
+                        <form id="popupForm">
+                            
+                            <table>
+                                <tr>
+                                    <td>Accuarcy Piece</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Accuarcy Augment</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Alac Piece</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Alac Augment</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Crit Piece</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Crit Augment</td>
+                                    <td> 11</td>
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+
+                <div class="grow1">
+                    <h1>Concealment</h1>
+                    Class: Damage (over Burst)<br>
+                    Mirror: Scoundrel Scraper<br>
+                    Implants:
+                    <div class="implants">
+                        <text class="green">Locked and Loaded</text><br>
+                        <text class="green">Tactican</text><br>
+                    </div>
+                    <a href="#" onclick="openPopupAlacAlac()"> Alac and Alac Gear</a> <br>
+                </div>
+
+                <div class="grow1">
+                    <h1>Lethality</h1>
+                    Class: Damage (Over time)<br>
+                    Mirror: Scoundrel Ruffian<br>
+                    Implants: 
+                    <div class="implants">
+                        <text class="green">Locked and Loaded</text><br>
+                        <text class="green">Tactican</text><br>
+                    </div>
+                    <a href="#" onclick="openPopupAlacAlac()"> Alac and Alac Gear</a> <br>
+                </div>
+            </section>
+        </div>
+
+    </div>  
+</div>
+
+<script>
+    function openPopupCritAlac() {
+  document.getElementById("openPopupCritAlac").style.display = "block";
+}
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    document.getElementById("openPopupCritAlac").style.display = "none";
+  }
+});
+function openPopupAlacAlac() {
+  document.getElementById("openPopupAlacAlac").style.display = "block";
+}
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    document.getElementById("openPopupAlacAlac").style.display = "none";
+  }
+});
+</script>
+</body>
+</html>
