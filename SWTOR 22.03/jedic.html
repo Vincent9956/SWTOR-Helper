@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jedic.css">
+</head>
+<body>  
+    <section class="layout">
+        <div class="grow1" id="grow1" onclick="displayscreen1()">
+            <div class="numberingrow1">01.</div>
+            Infiltration 
+
+        </div>
+        <div class="grow2" onclick="displayscreen2()">
+            <div class="numberingrow1">02.</div>
+            Kinetic Combat
+        </div>
+        <div class="grow3" onclick="displayscreen3()">
+            <div class="numberingrow1">03.</div>
+            Serenity
+        </div>
+    </section>  
+    <div id="Start">Kacka</div>
+    <div id="text1" style="display:none">
+        <section class="texts">
+            <div class="growtexts"><h1 style="font-size: 3.75em;">Infiltration</h1>
+            
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="growtexts"> <h1 style="font-size: 1.75em;">Stealth and one of the best damage dealing classes </h1></div>
+
+          </section>
+    </div>
+    <div id="text2" style="display:none">
+        <section class="texts">
+            <div class="growtexts">Test text 2</div>
+            <div class="growtexts">Test text 2</div>
+          </section>
+    </div>
+    </div>
+    <div id="text3" style="display:none">
+        <section class="texts">
+            <div class="growtexts">Test text 3</div>
+            <div class="growtexts">Test text 3</div>
+          </section>
+    </div>
+    </div>
+<script>
+    function displayscreen1(){
+        document.getElementById("Start").style.display="none";
+        document.getElementById("text2").style.display="none";
+        document.getElementById("text3").style.display="none";
+        document.getElementById("text1").style.display="block";
+    }
+    function displayscreen2(){
+        document.getElementById("Start").style.display="none";
+        document.getElementById("text1").style.display="none";
+        document.getElementById("text3").style.display="none";
+        document.getElementById("text2").style.display="block";
+    }
+    function displayscreen3(){
+        document.getElementById("Start").style.display="none";
+        document.getElementById("text1").style.display="none";
+        document.getElementById("text2").style.display="none";
+        document.getElementById("text3").style.display="block";
+    }
+</script>
+</body>
+</html>

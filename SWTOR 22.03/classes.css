@@ -1,0 +1,67 @@
+/* Base styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3A2831;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  color: #CEC2C9;
+  border-radius: 6px;
+  text-align: center;
+  padding: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background-color: #3A2831;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper_darkside {
+  background-color: #CEC2C9;
+  border-radius: 25px;
+  overflow: hidden; /* Added */
+  white-space: nowrap; /* Added */
+}
+.green{
+  color:green;
+}
+.red{
+  color:#D21502;
+}
+
+
+.layout_class1 {
+  width: 100%;
+  background-color: #CEC2C9;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap; /* Added */
+}
+
+.parent_class {
+  text-align: center;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.grow1 {
+  flex-grow: 1;
+  overflow: hidden; /* Added */
+  white-space: nowrap; /* Added */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .layout_class1 {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+      border-radius: 15px; /* Adjust border radius for smaller screens */
+  }
+}
+
