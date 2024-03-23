@@ -22,37 +22,132 @@
             Serenity
         </div>
     </section>  
-    <div id="Start">Kacka</div>
+
+    <div id="Start">Kacka
+        
+    </div>
+<!--Infiltration-->
+
     <div id="text1" style="display:none">
-        <section class="texts">
-            <div class="growtexts"><h1 style="font-size: 3.75em;">Infiltration</h1>
-            
-
-
-
-
+        <section class="sublayout">
+            <div class="subgrow">
+               <h1>Gearing:</h1> <br>
+               <div class="Tactical">
+               Tactical: <br>
+               The Awaknede Flame (Single Target) <br>
+               May Cause Injury (AOE) <br> 
+               </div>
+               <br>
+               <div class="legendary">
+                    Implants: <br>
+                    <text style="Color:red">Dynamic Force</text> <br>
+                    <text style="Color:green">Force Training</text><br>
+               </div>
+               <br>
+               <div class="armor">
+                    Armor: <br>
+                    <table>
+                        <tr>
+                            <td>Accuarcy Piece</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Accuarcy Augment</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Alacrity Piece</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Alacrity Augment</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Critical Piece</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Critical Augment</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+               </div>
             </div>
-
-
-
-
-
-            <div class="growtexts"> <h1 style="font-size: 1.75em;">Stealth and one of the best damage dealing classes </h1></div>
-
-          </section>
+            <div class="subgrow" >
+                <h1>Tree</h1>
+                <h3>Solo Single Target</h3>
+                    <div class="tree">
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="chosenblackbox" id="level_73"></div>
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="chosenblackbox" id="level_68"></div>
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="chosenblackbox" id="level_64"></div>
+                        <div class="chosenblackbox" id="level_51"></div>
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="chosenblackbox" id="level_43"></div>
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="chosenblackbox" id="level_39"></div>
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="chosenblackbox" id="level_27"></div>
+                        <div class="blackbox"></div>
+                        <div class="blackbox"></div>
+                        <div class="chosenblackbox" id="level_23"></div>
+                    </div>
+                <div class="choises">
+                    <div class="T23_2_23">Level 23: Energized Blade</div>
+                    <div class="T27_2_27">Level 27 : Force Magnetism or Force Wave </div>
+                    <div class="T39_2_39">Level 39: Vision Engine</div>
+                    <div class="T43_2_43">Level 43: Far sight Instruments </div>
+                    <div class="T51_2_51">Level 51: Intangible Spirit </div>
+                    <div class="T64_2_64">Level 64: Lambaste </div>
+                    <div class="T68_2_68">Level 68: Resilience </div>
+                    <div class="T73_2_73">Level 73: Cloak of Resilience</div>
+                </div>   
+            </div>
+            <div class="subgrow">
+                <h1>Rotation</h1>
+            </div>
+        </section>  
     </div>
+    <!--Telekenetic Combat-->
     <div id="text2" style="display:none">
-        <section class="texts">
-            <div class="growtexts">Test text 2</div>
-            <div class="growtexts">Test text 2</div>
-          </section>
+        <section class="sublayout">
+            <div class="subgrow">
+               <h1>Gearing:</h1> 
+    
+            </div>
+            <div class="subgrow" >
+                <h1>Tree</h1>
+            </div>
+            <div class="subgrow">
+                <h1>Rotation</h1>
+            </div>
+        </section>  
     </div>
-    </div>
+    
     <div id="text3" style="display:none">
-        <section class="texts">
-            <div class="growtexts">Test text 3</div>
-            <div class="growtexts">Test text 3</div>
-          </section>
+        <section class="sublayout">
+            <div class="subgrow">
+               <h1>Gearing:</h1> 
+    
+            </div>
+            <div class="subgrow" >
+                <h1>Tree:</h1>
+            </div>
+            <div class="subgrow">
+                <h1>Rotation:</h1>
+            </div>
+        </section>  
     </div>
     </div>
 <script>
@@ -74,6 +169,38 @@
         document.getElementById("text2").style.display="none";
         document.getElementById("text3").style.display="block";
     }
+
+    
+    const triggers = [
+    { triggerClass: '.T23_2_23', targetID: '#level_23' },
+    { triggerClass: '.T27_2_27', targetID: '#level_27' },
+    { triggerClass: '.T39_2_39', targetID: '#level_39' },
+    { triggerClass: '.T43_2_43', targetID: '#level_43' },
+    { triggerClass: '.T51_2_51', targetID: '#level_51' },
+    { triggerClass: '.T64_2_64', targetID: '#level_64' },
+    { triggerClass: '.T68_2_68', targetID: '#level_68' },
+    { triggerClass: '.T73_2_73', targetID: '#level_73' },
+
+    // Add more trigger-target pairs as needed
+];
+
+// Iterate over the triggers array
+triggers.forEach(trigger => {
+    // Get references to the trigger element and target element
+    const triggerElement = document.querySelector(trigger.triggerClass);
+    const targetElement = document.querySelector(trigger.targetID);
+
+    // Add event listener for mouseover
+    triggerElement.addEventListener('mouseover', function() {
+        targetElement.style.backgroundColor = 'yellow';
+    });
+
+    // Add event listener for mouseout
+    triggerElement.addEventListener('mouseout', function() {
+        targetElement.style.backgroundColor = 'green';
+    });
+});
+
 </script>
 </body>
 </html>
