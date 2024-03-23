@@ -7,13 +7,60 @@
 }
 .sublayout{
   width: 100%;
-
+  
   display: flex;
 }
 
 /*-----------------------*/
 body{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* -------------Divs-------------- */
+
+/*--- Tactical ----*/
+.Tactical{
+  background: #CABFAB;
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  margin-right: 5em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Tactical:hover{
+  cursor: pointer;
+  background: hsl(39, 23%, 85%);
+}
+/* --- legendary -----*/
+.legendary{
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  padding: 1.5em;
+  background: #DFD8C8;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1.5em;
+  margin-right: 5em;
+}
+.legendary:hover{
+  cursor: pointer;
+  background-color: hsl(42, 26%, 90%);
+}
+/* -- Armor */
+.armor{
+  color: #000;
+  background: #41444B;
+  position: relative;
+  text-decoration: none;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  margin-right: 5em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.armor:hover{
+  cursor: pointer;
+  background-color: hsl(222, 7%, 40%);
 }
 /*Treestuff ----------------*/
 .blackbox{
@@ -27,7 +74,12 @@ body{
   width: 3em;
   border-radius: 15px;
   background-color: green;
-
+}
+.main_tree{
+  border-radius: 1.5em;
+  padding: 0.5em;
+  margin-right: 2.5em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .tree{
   display: grid;
@@ -39,17 +91,17 @@ body{
   cursor: pointer;
 }
 /*-----------------------*/
+.subgrow{
+  width: 33%;
+  flex-grow: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
 .grow1 { 
   width: 33%;
   flex-grow: 1;
   font-size: 3.125em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
-.subgrow{
-  width: 33%;
-  flex-grow: 1;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
 .grow2 { 
     width: 33%;
     flex-grow: 1;
@@ -66,28 +118,17 @@ body{
 /*-------------------*/
 .grow1:hover{
   cursor: pointer;
-  background-color: orange;
-  transition: background-color 0.9s ease;
 }
 .grow2:hover{
   cursor: pointer;
-  background-color: black;
-  color:white;
-  transition: background-color 0.9s ease;
-  transition: color 0,9s ease; 
 }
 .grow3:hover{
   cursor: pointer;
-  background-color: crimson;
-  color:white;
-  transition: background-color 0.9s ease;
-  transition: color 0,9s ease;
-
-/*-----------------------*/
 }
+/*-----------------------*/
+
 .numberingrow1{
   font-size: 0.5625em;
 }
-
 /*-----------------------*/
 .growtexts { flex-grow: 1; }

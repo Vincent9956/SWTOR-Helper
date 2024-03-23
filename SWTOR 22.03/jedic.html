@@ -13,20 +13,20 @@
             Infiltration 
 
         </div>
-        <div class="grow2" onclick="displayscreen2()">
+        <div class="grow2" id="grow2" onclick="displayscreen2()">
             <div class="numberingrow1">02.</div>
             Kinetic Combat
         </div>
-        <div class="grow3" onclick="displayscreen3()">
+        <div class="grow3" id="grow3" onclick="displayscreen3()">
             <div class="numberingrow1">03.</div>
             Serenity
         </div>
     </section>  
 
-    <div id="Start">Kacka
-        
+    <div id="Start">
+        <img src="/images/wellby-rocket.gif" style="box-shadow: 4px 3px 3px red;">
     </div>
-<!--Infiltration-->
+    <!--Infiltration-->
 
     <div id="text1" style="display:none">
         <section class="sublayout">
@@ -76,46 +76,52 @@
             </div>
             <div class="subgrow" >
                 <h1>Tree</h1>
-                <h3>Solo Single Target</h3>
-                    <div class="tree">
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="chosenblackbox" id="level_73"></div>
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="chosenblackbox" id="level_68"></div>
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="chosenblackbox" id="level_64"></div>
-                        <div class="chosenblackbox" id="level_51"></div>
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="chosenblackbox" id="level_43"></div>
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="chosenblackbox" id="level_39"></div>
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="chosenblackbox" id="level_27"></div>
-                        <div class="blackbox"></div>
-                        <div class="blackbox"></div>
-                        <div class="chosenblackbox" id="level_23"></div>
-                    </div>
-                <div class="choises">
-                    <div class="T23_2_23">Level 23: Energized Blade</div>
-                    <div class="T27_2_27">Level 27 : Force Magnetism or Force Wave </div>
-                    <div class="T39_2_39">Level 39: Vision Engine</div>
-                    <div class="T43_2_43">Level 43: Far sight Instruments </div>
-                    <div class="T51_2_51">Level 51: Intangible Spirit </div>
-                    <div class="T64_2_64">Level 64: Lambaste </div>
-                    <div class="T68_2_68">Level 68: Resilience </div>
-                    <div class="T73_2_73">Level 73: Cloak of Resilience</div>
-                </div>   
+                <div class="main_tree">
+                    <h3>Solo Single Target</h3>
+                        <div class="tree">
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="level_73"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="level_68"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="level_64"></div>
+                            <div class="chosenblackbox" id="level_51"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="level_43"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="level_39"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="level_27"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="level_23"></div>
+                        </div>
+                    
+                    <div class="choises">
+                        <div class="T23_2_23">Level 23: Energized Blade</div><br>
+                        <div class="T27_2_27">Level 27 : Force Magnetism or Force Wave </div><br>
+                        <div class="T39_2_39">Level 39: Vision Engine</div><br>
+                        <div class="T43_2_43">Level 43: Far sight Instruments </div><br>
+                        <div class="T51_2_51">Level 51: Intangible Spirit </div><br>
+                        <div class="T64_2_64">Level 64: Lambaste </div><br>
+                        <div class="T68_2_68">Level 68: Resilience </div><br>
+                        <div class="T73_2_73">Level 73: Cloak of Resilience</div><br>
+                    </div>   
+                </div>
             </div>
             <div class="subgrow">
                 <h1>Rotation</h1>
+            <div class="Rotation">
+                N/A
+            </div>
             </div>
         </section>  
     </div>
@@ -152,22 +158,35 @@
     </div>
 <script>
     function displayscreen1(){
+        document.getElementById("grow1").style.backgroundColor='orange';
+        document.getElementById("grow2").style.backgroundColor='white';
+        document.getElementById("grow3").style.backgroundColor='white';
+        document.getElementById("grow2").style.color="black";
         document.getElementById("Start").style.display="none";
         document.getElementById("text2").style.display="none";
         document.getElementById("text3").style.display="none";
         document.getElementById("text1").style.display="block";
     }
     function displayscreen2(){
+        document.getElementById("grow1").style.backgroundColor='white';
+        document.getElementById("grow2").style.backgroundColor='black';
+        document.getElementById("grow3").style.backgroundColor='white';
+        document.getElementById("grow2").style.color="white"
         document.getElementById("Start").style.display="none";
         document.getElementById("text1").style.display="none";
         document.getElementById("text3").style.display="none";
         document.getElementById("text2").style.display="block";
     }
     function displayscreen3(){
+        document.getElementById("grow1").style.backgroundColor='white';
+        document.getElementById("grow2").style.backgroundColor='white';
+        document.getElementById("grow3").style.backgroundColor='crimson';
+        document.getElementById("grow2").style.color="black";
         document.getElementById("Start").style.display="none";
         document.getElementById("text1").style.display="none";
         document.getElementById("text2").style.display="none";
         document.getElementById("text3").style.display="block";
+
     }
 
     
