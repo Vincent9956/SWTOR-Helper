@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jedic.css">
+</head>
+<body>  
+    <section class="layout">
+        <div class="grow1" id="grow1" onclick="displayscreen1()">
+            <div class="numberingrow1">01.</div>
+            Infiltration 
+
+        </div>
+        <div class="grow2" id="grow2" onclick="displayscreen2()">
+            <div class="numberingrow1">02.</div>
+            Kinetic Combat
+        </div>
+        <div class="grow3" id="grow3" onclick="displayscreen3()">
+            <div class="numberingrow1">03.</div>
+            Serenity
+        </div>
+    </section>  
+
+    <div id="Start">
+        <img src="/images/wellby-rocket.gif" style="box-shadow: 4px 3px 3px red;">
+    </div>
+    <!--Infiltration-->
+
+    <div id="text1" style="display:none">
+        <section class="sublayout">
+            <div class="subgrow">
+               <h1>Gearing:</h1> <br>
+               <div class="Tactical">
+               Tactical: <br>
+               The Awaknede Flame (Single Target) <br>
+               May Cause Injury (AOE) <br> 
+               </div>
+               <br>
+               <div class="legendary">
+                    Implants: <br>
+                    <text style="Color:red">Dynamic Force</text> <br>
+                    <text style="Color:green">Force Training</text><br>
+               </div>
+               <br>
+               <div class="armor">
+                    Armor: <br>
+                    <table>
+                        <tr>
+                            <td>Accuarcy Piece</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Accuarcy Augment</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Alacrity Piece</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Alacrity Augment</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Critical Piece</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Critical Augment</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+               </div>
+            </div>
+            <div class="subgrow" >
+                <h1>Tree</h1>
+                <div class="main_tree">
+                    <h3>Solo Single Target</h3>
+                        <div class="tree">
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="ilevel_73"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="ilevel_68"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="ilevel_64"></div>
+                            <div class="chosenblackbox" id="ilevel_51"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="id"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="ilevel_39"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="ilevel_27"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="ilevel_23"></div>
+                        </div>
+                    
+                    <div class="choises">
+                        <div class="I23_2_23">Level 23: Energized Blade</div><br>
+                        <div class="I27_2_27">Level 27 : Force Magnetism or Force Wave </div><br>
+                        <div class="I39_2_39">Level 39: Vision Engine</div><br>
+                        <div class="I43_2_43">Level 43: Far sight Instruments </div><br>
+                        <div class="I51_2_51">Level 51: Intangible Spirit </div><br>
+                        <div class="I64_2_64">Level 64: Lambaste </div><br>
+                        <div class="I68_2_68">Level 68: Resilience </div><br>
+                        <div class="I73_2_73">Level 73: Cloak of Resilience</div><br>
+                    </div>   
+                </div>
+            </div>
+            <div class="subgrow">
+                <h1>Rotation</h1>
+            <div class="Rotation">
+                N/A
+            </div>
+            </div>
+        </section>  
+    </div>
+    <!--Telekenetic Combat-->
+    <div id="text2" style="display:none">
+        <section class="sublayout">
+            <div class="subgrow">
+               <h1>Gearing:</h1> <br>
+               <div class="Tactical">
+               Tactical: <br>
+               Two Cloaks <br>
+               Shroud of a shadow<br> 
+               </div>
+               <br>
+               <div class="legendary">
+                    Implants: <br>
+                    <text style="color:lightskyblue">Force Resistance</text><br>
+                    <text style="Color:red">Dynamic Force</text> <br>
+                    <text style="Color:green">Force Training</text><br>
+               </div>
+               <br>
+               <div class="armor">
+                    Stats(Armor:) <br>
+                    Shield: 5000-5500 <br>
+                    Absorb: Remaining 
+               </div>
+            </div>
+            <div class="subgrow" >
+                <h1>Tree</h1>
+                <div class="main_tree">
+                    <h3>Operation</h3>
+                        <div class="tree">
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="klevel_73"></div>
+                            <div class="chosenblackbox" id="klevel_68"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="klevel_64"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="klevel_51"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="klevel_43"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="klevel_39"></div>
+                            <div class="chosenblackbox" id="klevel_27"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="blackbox"></div>
+                            <div class="chosenblackbox" id="klevel_23"></div>
+                            <div class="blackbox"></div>
+                        </div>
+                    
+                    <div class="choises">
+                        <div class="k23_2_23">Level 23: Antagonizing Debris</div><br>
+                        <div class="k27_2_27">Level 27 : Energized Project </div><br>
+                        <div class="k39_2_39">Level 39: Twilight Ward</div><br>
+                        <div class="k43_2_43">Level 43: Battle Readiness </div><br>
+                        <div class="k51_2_51">Level 51: Fade </div><br>
+                        <div class="k64_2_64">Level 64: Kinetic Surge </div><br>
+                        <div class="k68_2_68">Level 68: Cleaving Cut</div><br>
+                        <div class="k73_2_73">Level 73: Cloak of Resilience</div><br>
+                    </div>   
+                </div>
+            </div>
+            <div class="subgrow">
+                <h1>Rotation</h1>
+            <div class="Rotation">
+                5 Button priority : <br>
+                1. Slow time |Huge threat generator <br>
+                2. Project | Generates a lot of threat <br>
+                3. Cascading Debris | Try to only use it when it is glowing 
+            </div>
+            </div>
+        </section>  
+    </div>
+    <!--Serity-->
+    <div id="text3" style="display:none">
+        <section class="sublayout">
+            <div class="subgrow">
+               <h1>Gearing:</h1> 
+    
+            </div>
+            <div class="subgrow" >
+                <h1>Tree:</h1>
+            </div>
+            <div class="subgrow">
+                <h1>Rotation:</h1>
+            </div>
+        </section>  
+    </div>
+    </div>
+<script>
+    function displayscreen1(){
+        document.getElementById("grow1").style.backgroundColor='orange';
+        document.getElementById("grow2").style.backgroundColor='white';
+        document.getElementById("grow3").style.backgroundColor='white';
+        document.getElementById("grow2").style.color="black";
+        document.getElementById("Start").style.display="none";
+        document.getElementById("text2").style.display="none";
+        document.getElementById("text3").style.display="none";
+        document.getElementById("text1").style.display="block";
+    }
+    function displayscreen2(){
+        document.getElementById("grow1").style.backgroundColor='white';
+        document.getElementById("grow2").style.backgroundColor='black';
+        document.getElementById("grow3").style.backgroundColor='white';
+        document.getElementById("grow2").style.color="white"
+        document.getElementById("Start").style.display="none";
+        document.getElementById("text1").style.display="none";
+        document.getElementById("text3").style.display="none";
+        document.getElementById("text2").style.display="block";
+    }
+    function displayscreen3(){
+        document.getElementById("grow1").style.backgroundColor='white';
+        document.getElementById("grow2").style.backgroundColor='white';
+        document.getElementById("grow3").style.backgroundColor='crimson';
+        document.getElementById("grow2").style.color="black";
+        document.getElementById("Start").style.display="none";
+        document.getElementById("text1").style.display="none";
+        document.getElementById("text2").style.display="none";
+        document.getElementById("text3").style.display="block";
+
+    }
+
+    
+    const triggers = [
+    { triggerClass: '.I23_2_23', targetID: '#ilevel_23' },
+    { triggerClass: '.I27_2_27', targetID: '#ilevel_27' },
+    { triggerClass: '.I39_2_39', targetID: '#ilevel_39' },
+    { triggerClass: '.I43_2_43', targetID: '#ilevel_43' },
+    { triggerClass: '.I51_2_51', targetID: '#ilevel_51' },
+    { triggerClass: '.I64_2_64', targetID: '#ilevel_64' },
+    { triggerClass: '.I68_2_68', targetID: '#ilevel_68' },
+    { triggerClass: '.I73_2_73', targetID: '#ilevel_73' },
+    { triggerClass: '.k23_2_23', targetID: '#klevel_23' },
+    { triggerClass: '.k27_2_27', targetID: '#klevel_27' },
+    { triggerClass: '.k39_2_39', targetID: '#klevel_39' },
+    { triggerClass: '.k43_2_43', targetID: '#klevel_43' },
+    { triggerClass: '.k51_2_51', targetID: '#klevel_51' },
+    { triggerClass: '.k64_2_64', targetID: '#klevel_64' },
+    { triggerClass: '.k68_2_68', targetID: '#klevel_68' },
+    { triggerClass: '.k73_2_73', targetID: '#klevel_73' },
+    // Add more trigger-target pairs as needed
+];
+
+// Iterate over the triggers array
+triggers.forEach(trigger => {
+    // Get references to the trigger element and target element
+    const triggerElement = document.querySelector(trigger.triggerClass);
+    const targetElement = document.querySelector(trigger.targetID);
+
+    // Add event listener for mouseover
+    triggerElement.addEventListener('mouseover', function() {
+        targetElement.style.backgroundColor = 'yellow';
+    });
+
+    // Add event listener for mouseout
+    triggerElement.addEventListener('mouseout', function() {
+        targetElement.style.backgroundColor = 'green';
+    });
+});
+
+</script>
+</body>
+</html>

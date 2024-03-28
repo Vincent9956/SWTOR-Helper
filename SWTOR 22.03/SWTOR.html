@@ -21,14 +21,24 @@
     <label for="class">Class:</label>
     <select id="class" name="class" required>
       <option value="" disabled selected>Select a class</option>
-      <option value="Bounty Hunter">Bounty Hunter</option>
-      <option value="Imperial Agent">Imperial Agent</option>
-      <option value="Jedi Consular">Jedi Consular</option>
-      <option value="Jedi Knight">Jedi Knight</option>
-      <option value="Sith Inquisitor">Sith Inquisitor</option>
-      <option value="Sith Warrior">Sith Warrior</option>
-      <option value="Smuggler">Smuggler</option>
-      <option value="Trooper">Trooper</option>
+      <option value="Mercenary">Mercenary</option>
+      <option value="Powertech">Powertech</option>
+      <option value="Operative">Operative</option>
+      <option value="Sniper">Sniper</option>
+      <option value="Guardian">Guardian</option>
+      <option value="Sage">Sage</option>
+      <option value="Sentinel">Sentinel</option>
+      <option value="Shadow">Shadow</option>
+      <option value="Assasin">Assasin</option>
+      <option value="Sorcerer">Sorcerer</option>
+      <option value="Juggernaut">Juggernaut</option>
+      <option value="Marauder">Marauder</option>
+      <option value="Gunslinger">Gunslinger</option>
+      <option value="Scoundrel">Scoundrel</option>
+      <option value="Commando">Commando</option>
+      <option value="Vanguard">Vanguard</option>
+
+
     </select><br><br>
     <label for="companions">Number of Companions:</label>
     <input type="number" id="companions" name="companions" required><br><br>
@@ -105,14 +115,23 @@ var companions = document.getElementById("companions").value;
 
 // Map class values to specific HTML filenames
 var classToFilename = {
-  "Bounty Hunter": "./bountyhunter.html",
-  "Imperial Agent": "./imperialagent.html",
-  "Jedi Consular": "./jedic.html",
-  "Jedi Knight": "./jedik.html",
-  "Sith Inquisitor": "./Sithinq.html",
-  "Sith Warrior": "./sithwarr.html",
-  "Smuggler": "./smuggler.html",
-  "Trooper": "./trooper.html"
+  "Mercenary": "./mercenary.html",
+  "Powertech": "./Powertech.html",
+  "Operative": "./operative.html",
+  "Sniper": "./sniper.html",
+  "Guardian": "./guardian.html",
+  "Sage": "./sage.html",
+  "Sentinel": "./sentinel.html",
+  "Shadow": "./shadow.html",
+  "Assasin": "./assasin.html",
+  "Sorcerer": "./sorcerer.html",
+  "Juggernaut": "./juggernaut.html",
+  "Marauder": "./marauder.html",
+  "Gunslinger": "./gunslinger.html",
+  "Scoundrel": "./scoundrel.html",
+  "Commando": "./commando.html",
+  "Vanguard": "./vanguard.html"
+
 };
 
 
